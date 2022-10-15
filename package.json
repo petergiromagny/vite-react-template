@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
     "prettier": "prettier --config .prettierrc 'src/*' --write",
-    "prepare": "husky install"
+    "husky:init": "husky install"
   },
   "dependencies": {
     "react": "18.2.0",
