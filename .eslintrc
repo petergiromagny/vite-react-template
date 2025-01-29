@@ -10,7 +10,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
-    "plugin:prettier/recommended"
+    "plugin:import/typescript"
   ],
   "plugins": [
     "react",
@@ -18,11 +18,11 @@
     "jsx-a11y",
     "@typescript-eslint",
     "import",
-    "simple-import-sort"
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.eslint.json",
+    "project": "./tsconfig.json",
     "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
@@ -34,19 +34,59 @@
       "version": "detect"
     },
     "import/resolver": {
-      "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx"],
-          "moduleDirectory": ["node_modules", "src/"]
+      "typescript": {
+        "project": "./tsconfig.json"
       }
     }
   },
   "rules": {
-    "prettier/prettier": 2,
-
-    "react/react-in-jsx-scope": 0,
-
+    // "prettier/prettier": "error",
+    "@typescript-eslint/no-empty-function": "off",
+    "react/react-in-jsx-scope": "off",
     // Turn Off to prevent ESLint and Prettier conflict
-    "arrow-body-style": 0,
-    "prefer-arrow-callback": 0
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    // Dependencies sort
+    "import/no-unresolved": "error",
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/default": "off",
+    "import/export": "error",
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          [
+            "sibling",
+            "parent"
+          ],
+          "index",
+          "unknown"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "sort-imports": [
+      "warn",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": [
+          "none",
+          "all",
+          "multiple",
+          "single"
+        ],
+        "allowSeparatedGroups": true
+      }
+    ]
   }
 }
