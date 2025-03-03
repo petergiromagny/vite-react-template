@@ -1,139 +1,114 @@
-<h1 align="center">Vite - React template</h1>
+# 🚀 React Vite.js Starter Template
 
-<p align="center">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/petergiromagny/vite-react-template?style=for-the-badge">
-    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/petergiromagny/vite-react-template?style=for-the-badge">
-    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/petergiromagny/vite-react-template?style=for-the-badge">
-    <img alt="GitHub" src="https://img.shields.io/github/license/petergiromagny/vite-react-template?style=for-the-badge">
-</p>
+A robust and efficient **React + Vite.js** template designed to accelerate your project development with best practices
+and modern tooling. 🚀
 
-<br>
+## 🚀 Getting Started
 
-<div align="center">
-    <img align="center" width="110" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1039px-Vitejs-logo.svg.png" alt="Vite Logo">
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img align="center" width="110" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="Vite Logo">
-</div>
+### 📥 Using the Template Feature
 
-<br>
+To create a new repository from this template:
 
-<div align="center">
-    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> 
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="Typescript" width="40" height="40"/> 
-    </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind" width="40" height="40"/>
-    </a> 
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://yarnpkg.com/" target="_blank" rel="noreferrer">
-        <img src="https://comptoir-du-libre.org/img/files/Softwares/Yarn/avatar/Logo-yarn.png" alt="Yarn" width="40" height="40"/>
-    </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://eslint.org/" target="_blank" rel="noreferrer"> 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ESLint_logo.svg/1200px-ESLint_logo.svg.png" alt="ESLint" width="45" height="40"/> 
-    </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://prettier.io/" target="_blank" rel="noreferrer"> 
-        <img src="https://cdn.worldvectorlogo.com/logos/prettier-1.svg" alt="Prettier" width="40" height="40"/> 
-    </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://typicode.github.io/husky/#/" target="_blank" rel="noreferrer">
-        <span style="font-size: 40px" role="img" aria-label="Husky">🐶</span>
-    </a>
-</div>
-<br>
+1. Click the **"Use this template"** button at the top of the repository page.
+2. Follow the prompts to create your new repository.
 
-Template to start a Vite - React App project with all essential configuration (ESLint, Prettier, Husky and Tailwind).
+### 📦 Install Dependencies
 
-## Install
+Navigate to your project directory and install the dependencies using your preferred package manager:
 
-Use this template to create your project
-![Use this template](public/README/use_template.png)
-
-Create a new repository from this template
-![Create repository](public/README/create_new_repo.png)
-
-Clone your new repository (HTTPS or SSH clone)
 ```bash
-git clone https://github.com/[your-username]/[your-new-repo-name].git
-```
-```bash
-git clone git@github.com:[your-username]/[your-new-repo-name].git
+  # Using npm
+  npm install
 ```
 
-
-Go to the project directory
 ```bash
-  cd [your-new-repo-name]
+  # Using Yarn
+  yarn install
 ```
 
-Install dependencies
 ```bash
-yarn
-```
-```bash
-npm install
+  # Using pnpm
+  pnpm install
 ```
 
-Start project
-```bash
-yarn dev
-```
-```bash
-npm run dev
-```
+### ▶️ Start the Development Server
 
-## Usage
+Launch the development server with:
 
-### ESLint
 ```bash
-yarn lint
-```
-```bash
-npm run lint
+  # Using npm
+  npm run dev
 ```
 
-### Prettier
 ```bash
-yarn prettier
-```
-```bash
-npm run prettier
+  # Using Yarn
+  yarn dev
 ```
 
-### Husky
-
-Init Husky
 ```bash
-yarn husky:init
-```
-```bash
-npm run husky:init
+  # Using pnpm
+  pnpm dev
 ```
 
-> **Note**
-> 
-> If you're using <code>npm</code> you have to update Husky pre-commit
-> ```bash
-> npx husky set .husky/pre-commit "npm run lint && npm run prettier"
-> ```
+### 🌍 Access the Application
 
-- Edit <code>App.tsx</code> file
-- Save and add modification to local repo with: <code>git add App.tsx</code>
-- Then commit changes: <code>git commit -m "Update App.jsx"</code>
+Open your browser and navigate to:
 
-**In the terminal you gonna see <code>yarn/npm run prettier</code> followed by <code>yarn/npm run lint</code> before changes are committed on local branch**
+🔗 [http://localhost:5173](http://localhost:5173)
 
-## Follow me
-👤 **Peter Giromagny**
+## 🛠️ Technologies Used
 
-- Instagram: [@ForAllDevkind](https://www.instagram.com/foralldevkind/)
-- Github: [@petergiromagny](https://github.com/petergiromagny)
-- Website: [petergiromagny.com](https://petergiromagny.com)
+- **React**: A JavaScript library for building user interfaces.
+- **Vite.js**: A fast build tool and development server.
+- **TypeScript**: Ensures type safety and enhances developer experience.
+- **Tailwind CSS**: Offers utility-first CSS for rapid UI development.
 
-Please ⭐️ this repository if this project helped you!
+## 🛡️ Code Quality
 
-## License
+This template is configured with tools to maintain high code quality:
 
-[MIT](https://choosealicense.com/licenses/mit/)
+- **Husky**: Manages Git hooks to enforce code quality checks before commits.
+- **ESLint**: Lints JavaScript and TypeScript code to adhere to best practices.
+- **Prettier**: Formats code consistently across the project.
+- **GitHub Actions**: Automates continuous integration workflows, including build and lint checks.
+
+### Husky Configuration
+
+Husky is set up to run pre-commit hooks that execute linting and formatting tasks, ensuring that only quality code is
+committed.
+
+### ESLint Configuration
+
+The ESLint setup extends recommended configurations for JavaScript, TypeScript, and React. It includes plugins for
+import management, React hooks, and integration with Prettier for consistent code formatting.
+
+### Prettier Configuration
+
+Prettier is configured with the following preferences:
+
+- **Semi-Colons**: Disabled (`semi: false`)
+- **Tab Width**: 2 spaces
+- **Print Width**: 120 characters
+- **Trailing Commas**: Enabled (`trailingComma: 'all'`)
+- **JSX Single Quote**: Enabled (`jsxSingleQuote: true`)
+- **Bracket Spacing**: Enabled (`bracketSpacing: true`)
+- **Bracket Same Line**: Disabled (`bracketSameLine: false`)
+
+### Continuous Integration
+
+A GitHub Actions workflow is included to automate the following on pull requests:
+
+1. **Dependency Installation**: Installs dependencies using `pnpm`.
+2. **Code Formatting Check**: Runs Prettier to ensure code is properly formatted.
+3. **Linting**: Executes ESLint to catch code issues.
+4. **Build**: Builds the Vite.js application to verify successful compilation.
+
+This setup ensures that code quality is maintained throughout the development lifecycle.
+
+## 📄 License
+
+This project is licensed under the **MIT License**. Feel free to use and modify it as per your needs.
+
+---
+
+🚀 **Start building your React application with confidence using this comprehensive starter template!** 🚀
