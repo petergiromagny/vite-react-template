@@ -1,17 +1,18 @@
 // @ts-check
 
 import { fixupPluginRules } from '@eslint/compat'
-import globals from 'globals'
 import eslint from '@eslint/js'
-import tsEslint from 'typescript-eslint'
 import tsParser from '@typescript-eslint/parser'
 import importPlugin from 'eslint-plugin-import'
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 import prettierPlugin from 'eslint-plugin-prettier'
 import eslintPluginReact from 'eslint-plugin-react'
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
 import eslintPluginReactRefresh from 'eslint-plugin-react-refresh'
-import { fileURLToPath } from 'node:url'
+import globals from 'globals'
 import { dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import tsEslint from 'typescript-eslint'
 
 const patchedReactHooksPlugin = fixupPluginRules(eslintPluginReactHooks)
 
@@ -22,6 +23,7 @@ const baseConfig = {
   extends: [eslint.configs.recommended],
   plugins: {
     prettier: prettierPlugin,
+    'jsx-a11y': jsxA11yPlugin,
   },
   languageOptions: {
     globals: {
@@ -70,6 +72,7 @@ const typescriptConfig = {
   },
   rules: {
     '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/consistent-type-imports': 'error',
 
     'import/no-unresolved': 'error',
     'import/named': 'error',
@@ -80,7 +83,7 @@ const typescriptConfig = {
     'import/order': [
       'warn',
       {
-        groups: ['builtin', 'external', 'internal', ['sibling', 'parent'], 'index', 'unknown'],
+        groups: ['builtin', 'external', 'internal', ['sibling', 'parent'], 'index', 'unknown', 'type'],
 
         'newlines-between': 'always',
 
