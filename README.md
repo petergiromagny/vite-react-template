@@ -1,7 +1,24 @@
 # 🚀 React Vite.js Starter Template
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-19-blue.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-6-646CFF.svg)](https://vitejs.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC.svg)](https://tailwindcss.com/)
+
 A robust and efficient **React + Vite.js** template designed to accelerate your project development with best practices
 and modern tooling. 🚀
+
+## 📑 Table of Contents
+
+- [Getting Started](#-getting-started)
+  - [Using the Template](#-using-the-template-feature)
+  - [Installation](#-install-dependencies)
+  - [Development](#-start-the-development-server)
+- [Project Structure](#-project-structure)
+- [Technologies](#-technologies-used)
+- [Code Quality](#-code-quality)
+- [License](#-license)
 
 ## 🚀 Getting Started
 
@@ -55,6 +72,61 @@ Launch the development server with:
 Open your browser and navigate to:
 
 🔗 [http://localhost:5173](http://localhost:5173)
+
+## 📁 Project Structure
+
+The project follows a feature-based architecture for better scalability and maintainability:
+
+```
+src/
+├── features/              # Feature modules
+│   ├── [feature-sample]/  # Example feature structure
+│   │   ├── components/    # Feature-specific components
+│   │   ├── hooks/         # Feature-specific hooks
+│   │   ├── services/      # API services and business logic
+│   │   ├── store/         # Feature state management
+│   │   ├── types/         # Feature-specific types
+│   │   ├── utils/         # Feature-specific utilities
+│   │   └── index.ts       # Public API exports
+├── shared/                # Shared resources
+│   ├── components/        # Reusable UI components (atoms, molecules, organisms)
+│   ├── hooks/             # Common custom hooks
+│   ├── utils/             # Utility functions
+│   ├── styles/            # Global styles
+│   └── types/             # Shared TypeScript types
+└── core/                  # Core application setup
+    ├── config/            # App configuration
+    ├── providers/         # Global providers
+    ├── router/            # Routing configuration
+    ├── store/             # Global state management
+    └── types/             # Global TypeScript types
+```
+
+Each major directory contains its own README.md with detailed documentation:
+
+- [`src/features/README.md`](src/features/README.md): Guidelines for creating and organizing feature modules
+- [`src/shared/README.md`](src/shared/README.md): Documentation for shared components and utilities
+- [`src/core/README.md`](src/core/README.md): Core application setup and configuration details
+
+### Key Architecture Principles
+
+1. **Feature-First Organization**:
+
+   - Each feature is self-contained with its own components, hooks, and business logic
+   - Features are independent and can be developed in isolation
+   - Clear boundaries between different parts of the application
+
+2. **Shared Resources**:
+
+   - Common components follow Atomic Design principles (atoms, molecules, organisms)
+   - Reusable hooks and utilities
+   - Consistent styling patterns
+
+3. **Core Configuration**:
+   - Centralized application setup
+   - Global state management
+   - Routing configuration
+   - Environment-aware configuration
 
 ## 🛠️ Technologies Used
 
