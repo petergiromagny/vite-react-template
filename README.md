@@ -1,7 +1,24 @@
 # 🚀 React Vite.js Starter Template
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-19-blue.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-6-646CFF.svg)](https://vitejs.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC.svg)](https://tailwindcss.com/)
+
 A robust and efficient **React + Vite.js** template designed to accelerate your project development with best practices
 and modern tooling. 🚀
+
+## 📑 Table of Contents
+
+- [Getting Started](#-getting-started)
+  - [Using the Template](#-using-the-template-feature)
+  - [Installation](#-install-dependencies)
+  - [Development](#-start-the-development-server)
+- [Project Structure](#-project-structure)
+- [Technologies](#-technologies-used)
+- [Code Quality](#-code-quality)
+- [License](#-license)
 
 ## 🚀 Getting Started
 
